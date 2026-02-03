@@ -4,7 +4,7 @@ export const metadata = {
 }
 
 import Hero from '@/components/hero'
-import Clients from '@/components/clients'
+import LogoWall from '@/components/logo-wall'
 import Features from '@/components/features'
 import Features02 from '@/components/features-02'
 import Features03 from '@/components/features-03'
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Clients />
+      <LogoWall />
       <Features />
       <Features02 />
       <Features03 />
