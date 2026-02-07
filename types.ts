@@ -1,3 +1,17 @@
+export type HeaderNavQuery = {
+  navigationCollection: {
+    items: {
+      name: string;
+      linksCollection: {
+        items: {
+          label: string;
+          href: string;
+        }[];
+      };
+    }[];
+  };
+}
+
 export type LogoWallQuery = {
   assetCollection: {
     items: {
@@ -24,3 +38,23 @@ export type HeroQuery = {
     }[];
   };
 };
+
+export type CustomerPostQuery = {
+  customerPostCollection: {
+    items: {
+      title: string;
+      slug: string;
+      customer: {
+        logo: {
+          url: string;
+          width: number;
+          height: number;
+        };
+        title: string;
+      };
+      body: {
+        json: JSON;
+      }
+    }[];
+  };
+}
